@@ -1,0 +1,13 @@
+{
+  "login": "BroLuShu",
+  "name": "Lü Shu",
+  "world": "Hornet Station",
+  "pagesUrl": "https://brolushu.github.io/BroLuShu/",
+  "refreshHours": 6,
+  "palette": {
+    "background": "#071e1b",
+    "ink": "#ebffef",
+    "accent": "#85e0b5",
+    "paper": "#12372e"
+  }
+}

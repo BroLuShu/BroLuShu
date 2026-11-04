@@ -1,0 +1,49 @@
+{
+  "login": "BroLuShu",
+  "world": "Hornet Station",
+  "project": "backup-manifest",
+  "sourceHead": "643606901fd2e63a8b7aeb58b3286a02b805e87b",
+  "runtime": "Node.js 22+",
+  "start": "node server.mjs",
+  "port": 8824,
+  "demoCheck": "node examples/profile-mission/check.mjs",
+  "existingTests": "passed",
+  "testCount": 2,
+  "demoResult": {
+    "facts": [
+      [
+        "4",
+        "paths compared"
+      ],
+      [
+        "1",
+        "unchanged file"
+      ],
+      [
+        "3",
+        "differences"
+      ]
+    ],
+    "statuses": [
+      {
+        "path": "changed.txt",
+        "status": "Изменён"
+      },
+      {
+        "path": "extra.txt",
+        "status": "Лишний"
+      },
+      {
+        "path": "missing.txt",
+        "status": "Отсутствует"
+      },
+      {
+        "path": "same.txt",
+        "status": "Совпадает"
+      }
+    ]
+  },
+  "zipBytes": 76974,
+  "zipSha256": "4B907808E0A78443E2C43769A5BFCB51F826DBFCBD9C0037ED1E942F86B8143D",
+  "attribution": "Original project authors and LICENSE retained. Source download excludes .git; original history remains in the local source repository."
+}

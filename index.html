@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Fictional DevOps engineer persona · Architecture, delivery and recovery. A portfolio of reproducible infrastructure lab ideas."><title>Lü Shu · Hornet Station</title><link rel="stylesheet" href="src/styles/profile.css"><script src="src/scripts/site.js" defer></script></head><body><main><nav class="site-nav"><span class="world-label">Hornet Station</span><a href="https://github.com/BroLuShu">@BroLuShu ↗</a></nav><p class="freshness" data-freshness>Saved preview · live refresh starts after Pages setup.</p><article><p><img src="src/assets/universe.png" alt="Hornet Station — hornet station engineer"></p>
+<h1 id="lü-shu--devops-engineer--systems-architecture">Lü Shu · DevOps Engineer · Systems Architecture</h1>
+<blockquote>
+<p><strong>Hornet Station</strong> · Every system needs a way home.</p>
+</blockquote>
+<p><strong>Build the system. Understand the signals. Design the recovery.</strong></p>
+<p><a href="src/assets/launch.zip">Download the runnable mission</a> · <a href="src/launch.html">Launch guide</a> · <a href="#working-stack">Working stack</a> · <a href="#selected-work">Selected work</a></p>
+<h2 id="mission-control">Mission control</h2>
+<p><img src="src/assets/mission.png" alt="Hornet Station — checked synthetic demonstration"></p>
+<p><strong>First launch: backup-manifest.</strong> A complete source snapshot, synthetic example and assertion script are included. The mission check and <strong>2 existing tests</strong> passed. <a href="src/launch.html">Try the mission</a> · <a href="src/assets/launch.json">Snapshot and checked result</a>.</p>
+<p>I&#39;m Lü Shu. My focus is DevOps and systems architecture. This workspace connects practical operational tools with a planned infrastructure lab: reproducible delivery, observable behaviour and a recovery procedure someone else can follow.</p>
+<p>I want the architecture diagram, the deployment notes and the restore procedure to tell the same story. The first building blocks here are deliberately inspectable: hashes, manifests and local documentation checks.</p>
+<h2 id="what-i-focus-on">What I focus on</h2>
+<ul>
+<li><strong>Architecture with boundaries.</strong> Make inputs, responsibilities and failure paths visible before a deployment.</li>
+<li><strong>Operational evidence.</strong> A manifest, a useful signal or a documented check should support the next decision.</li>
+<li><strong>Recovery as part of the design.</strong> Plan the rollback and restore alongside the build, then exercise them in a lab.</li>
+</ul>
+<h2 id="working-stack">Working stack</h2>
+<p><img src="src/assets/stack.png" alt="Current tooling and explicitly planned lab directions"></p>
+<p>The upper panel shows technologies used by the selected tools. The lower row is the next lab track.</p>
+<h2 id="how-i-think-about-the-work">How I think about the work</h2>
+<p><img src="src/assets/workflow.png" alt="The recovery path belongs in the architecture"></p>
+<h2 id="selected-work">Selected work</h2>
+<p>Three existing local tools form this curated collection. Their public project repositories are being prepared.</p>
+<p><img src="src/assets/projects.png" alt="Three selected projects and their purpose"></p>
+<table>
+<thead>
+<tr>
+<th>Project / stack</th>
+<th>Why it belongs here</th>
+<th>Input → output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Backup Manifest</strong><br>JavaScript · SHA-256</td>
+<td>Make a file comparison leave evidence. Create SHA-256 manifests and compare a set of files with an expected manifest.</td>
+<td><strong>In:</strong> Files + optional manifest<br><strong>Out:</strong> Hashes and comparison findings</td>
+</tr>
+<tr>
+<td><strong>Asset Dedupe</strong><br>JavaScript · file hashes</td>
+<td>Find exact duplicates before deciding what to keep. Hash selected assets and list exact duplicates for a separate review decision.</td>
+<td><strong>In:</strong> Selected files<br><strong>Out:</strong> Exact-duplicate groups</td>
+</tr>
+<tr>
+<td><strong>Link Sweep</strong><br>JavaScript · local files</td>
+<td>Inspect the links in a local handoff. Check internal references in a local documentation export.</td>
+<td><strong>In:</strong> Local export files<br><strong>Out:</strong> Internal-link findings</td>
+</tr>
+</tbody></table>
+<h3 id="the-first-lab-drawn-before-it-is-deployed">The first lab, drawn before it is deployed</h3>
+<pre><code class="language-text">versioned inputs → build → deploy → observe
+                       ↑              │
+                       └── recover ───┘
+</code></pre>
+<p>A design sketch for the planned lab. Backup Manifest supplies file-integrity evidence; a complete restore procedure will also need configuration, storage and an exercised recovery path.</p>
+<h2 id="code-and-activity">Code and activity</h2>
+<p><img data-live src="src/assets/live/overview.svg" alt="Public repository totals"></p>
+<p><img data-live src="src/assets/live/activity.svg" alt="Public default-branch history, all authors"></p>
+<p><img data-live src="src/assets/live/languages.svg" alt="Public repository language bytes"></p>
+<p><img data-live src="src/assets/live/interactions.svg" alt="Limited public account interactions"></p>
+<p>These charts are rebuilt on a six-hour schedule after GitHub Pages is enabled. The observation time is printed on every chart. Commits are unique default-branch SHAs across all authors and owned public repositories, including forks. Language bytes describe repositories, not personal skill. Public interactions are a limited event feed (up to 300 events / 30 days), not visitor analytics. API and image caches may delay updates.</p>
+<p><a href="src/assets/live/metrics.json">Live data and scope</a> · <a href="https://brolushu.github.io/BroLuShu/">Portfolio website</a> · <a href="https://github.com/BroLuShu/BroLuShu/blob/HEAD/src/SETUP.md">Refresh setup</a></p>
+<h2 id="next-lab">Next lab</h2>
+<ol>
+<li><strong>A repeatable deployment.</strong> Document one Linux/container lab with explicit configuration inputs.</li>
+<li><strong>A useful observation loop.</strong> Explore Prometheus and Grafana around a small service.</li>
+<li><strong>An exercised recovery.</strong> Record rollback and restore steps, expected results and the evidence.</li>
+</ol>
+<h2 id="start-a-conversation">Start a conversation</h2>
+<p>A recovery scenario, an unclear boundary or an operational check that needs a better explanation is a useful topic for the architecture notebook.</p>
+<p><a href="https://github.com/BroLuShu/BroLuShu/issues">Open the profile repository&#39;s issues</a> · <a href="https://github.com/BroLuShu?tab=repositories">Browse the repositories</a></p>
+<blockquote>
+<p>🛠️ Designing systems that can recover.</p>
+</blockquote>
+<hr>
+<p><sub>Fictional developer persona · AI-illustrated avatar. Curated tools retain original authors, licenses and commit history. Technology icons: Simple Icons.</sub></p>
+<p><a href="src/assets/NOTICE.md">Artwork and data notes</a></p>
+</article><footer class="site-footer"><a href="https://github.com/BroLuShu/BroLuShu">Source repository</a> · Public data refresh schedule: 6 hours.</footer></main></body></html>
